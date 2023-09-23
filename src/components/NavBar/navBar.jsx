@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
  Box,
  IconButton,
- ListItemText,
  Typography,
- ListItem,
- List,
  useTheme,
  useMediaQuery,
  Drawer,
@@ -14,15 +11,8 @@ import {
  CssBaseline,
 } from '@mui/material';
 import {
- Search,
- Message,
- DarkMode,
- LightMode,
- Notifications,
- Help,
  Close,
  Menu as MenuHamb,
- AccountCircleRounded,
 } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link as RouterLink } from 'react-router-dom';
@@ -30,8 +20,6 @@ import { useNavigate, Link as RouterLink } from 'react-router-dom';
 //-------------------- Actions --------------------------
 import { getNotification } from '../../state/actions/notification';
 
-//-------------------- Slices --------------------------
-import { getNotifications } from '../../state/slices/notificationSlice';
 
 //-------------------- Assets --------------------------
 import NavLogo from './../../assets/Logo_PXBR_Blanco-09.webp';
@@ -159,31 +147,7 @@ const NavBar = () => {
        onLoginClick={handleLoginClick}
        onRegisterClick={handleRegisterClick}
       />
-      {/* <FormContro
-            l variant='standard' value={fullName}>
-              <Select
-                value={fullName}
-                sx={{
-                  backgroundColor: neutralLight,
-                  width: '150px',
-                  borderRadius: '0.25rem',
-                  p: '0.25rem 1rem',
-                  '& .MuiSvgIcon-root': {                                      sesion del usuario
-                    pr: '0.25rem',
-                    width: '3rem'
-                  },
-                  '& .MuiSelect-select:focus':{
-                    backgroundColor: neutralLight
-                  }
-                }}
-                input={<InputBase />}
-              >
-                <MenuItem value={fullName}>
-                  <Typography>{fullName}</Typography>
-                </MenuItem>
-                <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
-              </Select>
-            </FormControl> */}
+      
      </FlexBetween>
     ) : (
      <div>
