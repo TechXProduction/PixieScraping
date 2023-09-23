@@ -17,7 +17,7 @@ import RegisterForm from './pages/Register/registerForm.jsx';
 import Home from './pages/Home/Home.jsx';
 import Usuarios from './pages/UsuariosAdmin/Usuarios.jsx';
 import NotFound from './pages/404/NotFound.jsx';
-import ScrapeForm from './pages/scrape/ScrapeForm.jsx';
+/* import ScrapeForm from './pages/scrape/ScrapeForm.jsx'; */
 import Viviendas from './pages/Viviendas/Viviendas.jsx';
 import Calculator from './pages/Calculator/Calculator.jsx';
 

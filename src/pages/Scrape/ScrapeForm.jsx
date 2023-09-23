@@ -14,12 +14,12 @@ import {
 import CircularProgress from '@mui/material/CircularProgress';
 
 //-------------------- Actions --------------------------
-import { getScrape } from '../../state/actions/scrape';
+/* import { getScrape } from '../../state/actions/scrape'; */
 
 //-------------------- Assets --------------------------
 //import BgImage from '../../assets/BG1.png'
 //import GoogleVector from '../../assets/Social Icons.png'
-import imageLogin from '../../assets/LoginImage.webp';
+/* import imageLogin from '../../assets/LoginImage.webp'; */
 
 //-------------------- Components --------------------------
 import ScrapeResult from './scrapeResult';
