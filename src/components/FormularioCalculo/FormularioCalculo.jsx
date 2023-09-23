@@ -37,6 +37,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 ////////////////////////////
 const Formulario = () => {
+  
+const svHost = import.meta.env.VITE_SV_HOST;
  const dispatch = useDispatch();
  const { intercepto } = useSelector((state) => state.intercepto);
  const { contador } = useSelector((state) => state.contador);
@@ -172,7 +174,7 @@ const Formulario = () => {
   if (contador.contador.numero === 5) {
    try {
     setLoadingCalculo(true);
-    await axios.get('http://localhost:4000/user/entrada');
+    await axios.get(`${svHost}/user/entrada`);
     setLoadingCalculo(false);
     dispatch(postVivienda(formularioData));
    } catch (error) {
