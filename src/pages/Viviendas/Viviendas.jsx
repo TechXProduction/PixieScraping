@@ -10,7 +10,7 @@ import { getVivienda } from '../../state/actions/vivienda';
 import { deleteVivienda } from '../../state/actions/vivienda';
 
 //-------------------- Components --------------------------
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../components/NavBar/navBar';
 
 /////////////////////////
 const Viviendas = () => {

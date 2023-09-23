@@ -23,7 +23,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 //-------------------- Components --------------------------
 import ScrapeResult from './scrapeResult';
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../components/NavBar/navBar';
 
 ////////////////////////////
 function Copyright(props) {

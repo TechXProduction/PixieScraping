@@ -1,7 +1,7 @@
 import React from 'react';
 
 //-------------------- Components --------------------------
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../components/NavBar/navBar';
 import Formulario from '../../components/FormularioCalculo/FormularioCalculo';
 
 ///////////////////////

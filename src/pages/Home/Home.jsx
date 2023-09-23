@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
 
 //-------------------- Components --------------------------
-import NavBar from '../../components/NavBar/NavBar';
-import Formulario from '../../components/FormularioCalculo/FormularioCalculo';
+import NavBar from '../../components/NavBar/navBar.jsx';
 
 ///////////////////////
 

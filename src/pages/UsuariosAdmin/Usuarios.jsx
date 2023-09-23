@@ -14,7 +14,7 @@ import {
 } from '../../state/actions/user';
 
 //-------------------- Components --------------------------
-import NavBar from '../../components/NavBar/NavBar';
+import NavBar from '../../components/NavBar/navBar';
 
 ////////////////////////
 const Usuarios = () => {
