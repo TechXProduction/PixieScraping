@@ -1,7 +1,7 @@
 import axios from 'axios';
 import swal from 'sweetalert';
 
-const svHost = 'localhost:4000';
+const svHost = import.meta.env.VITE_SV_HOST;
 
 export const getScrape = (nombre, asunto, año) => async (dispatch) => {
  try {
