@@ -7,17 +7,17 @@ console.log(svHost);
 
 export const logIn = (email, password) => async (dispatch) => {
  try {
-  /* let res = await axios.post(`${svHost}/user/login`, email, password); */
+  let res = await axios.post(`${svHost}/user/login`, email, password);
   //dispatch(getUser(res.data))
-  axios({
+ /*  let res = axios({
     method: 'POST',
     url: `${svHost}/user/login`,
     data: {email, password},
-  })
+  }) */
   sessionStorage.setItem('userData', JSON.stringify(res.data));
   window.location.href = '/';
  } catch (e) {
-  let respuesta = JSON.parse(e.request.response).error;
+  let respuesta = JSON.parse(e);
   if (respuesta) {
    swal(respuesta);
   } else swal('Ocurrio un error');

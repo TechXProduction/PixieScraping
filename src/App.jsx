@@ -25,9 +25,9 @@ import Calculator from './pages/Calculator/Calculator.jsx';
 const App = () => {
  const mode = useSelector((state) => state.mode.mode);
  const theme = createTheme(themeSettings(mode));
-
- const userDataString = sessionStorage.getItem('userData');
- const userData = userDataString ? JSON.parse(userDataString) : null;
+console.log("Esto es", typeof sessionStorage.getItem('userData') )
+ const userDataString = sessionStorage.getItem('userData') ;
+ const userData = userDataString !== "undefined" ? JSON.parse(userDataString) : null;
  const isUserLoggedIn = userData && userData.user && userData.token;
  //  console.log('USER DATAAA', userData);
  const isUserAdmin = isUserLoggedIn && userData.user.admin;

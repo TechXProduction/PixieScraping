@@ -93,7 +93,7 @@ function LogInForm() {
   let email = data.get('email');
   let password = data.get('password');
 
-  dispatch(logIn( email, password ));
+  dispatch(logIn( {email, password} ));
 
   setTimeout(() => {
    setLoading(false);
